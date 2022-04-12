@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Weather App</title>
+</head>
+<body>
+    <div style="position: absolute;" class="icon">
+         <i class="material-icons md-18">home</i><br>
+          <i class="material-icons md-18">search</i><br>
+          <i class="material-icons md-18">settings</i><br>
+          <i class="material-icons md-18">language</i><br>
+          <i class="material-icons md-18">logout</i>
+    </div>
+    <div class="container">
+        <div class="current-info">
+
+            <div class="date-container">
+                <div class="time" id="time">
+                    12:30 <span id="am-pm">PM</span>
+                </div>
+                <div class="date" id="date">
+                    Monday, 25 May
+                </div>
+
+                <div class="others" id="current-weather-items">
+                    Temperature : <b>30 &#176;C</b>
+                    Wind Speed  : <b>90 kph</b>
+                    Wind Direction: <b>East</b>
+                    Humidity    : <b>67%</b>
+
+                    
+                </div>
+            </div>
+
+            <div class="place-container">
+                <div class="time-zone" id="time-zone">Indira Gandhi International Airport</div>
+                <div id="country" class="country">IN</div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="future-forecast">
+        <div class="today" id="current-temp">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <div class="other">
+                <div class="day">10 A.M.</div>
+                <div class="temp">Temperature - 30 &#176; C</div>
+                <div class="temp">Wind Speed - 88kph</div>
+                <div class="temp">Wind Direction - East</div>
+                <div class="temp">Humidity - 50%</div>
+                <div class="vis1">Visibility - 2km</div>
+            </div>
+        </div>
+
+        <div class="weather-forecast" id="weather-forecast">
+            <div class="weather-forecast-item">
+                <div class="day">12 P.M.</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Temperature - 28 &#176; C</div>
+                <div class="temp">Wind Speed - 86kph</div>
+                <div class="temp">Wind Direction - East-West</div>
+                <div class="temp">Humidity - 60%</div>
+                <div class="vis">Visibility - 2km</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">1 P.M.</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Temperature - 35 &#176; C</div>
+                <div class="temp">Wind Speed - 72kph</div>
+                <div class="temp">Wind Direction - East</div>
+                <div class="temp">Humidity - 48%</div>
+                <div class="vis">Visibility - 1km</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">3 P.M.</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Temperature - 40 &#176; C</div>
+                <div class="temp">Wind Speed - 78kph</div>
+                <div class="temp">Wind Direction - West</div>
+                <div class="temp">Humidity - 57%</div>
+                <div class="vis">Visibility - 1500m</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">5 P.M.</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Temperature - 35 &#176; C</div>
+                <div class="temp">Wind Speed - 78kph</div>
+                <div class="temp">Wind Direction - West</div>
+                <div class="temp">Humidity - 62%</div>
+                <div class="vis">Visibility - 2km</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">7 P.M.</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+               <div class="temp">Temperature - 36 &#176; C</div>
+                <div class="temp">Wind Speed - 88kph</div>
+                <div class="temp">Wind Direction - West</div>
+                <div class="temp">Humidity - 53%</div>
+                <div class="vis">Visibility - 1750m</div>
+            </div>
+             <div class="weather-forecast-item">
+                <div class="day">9 P.M.</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Temperature - 30 &#176; C</div>
+                <div class="temp">Wind Speed - 77kph</div>
+                <div class="temp">Wind Direction - West</div>
+                <div class="temp">Humidity - 53%</div>
+                <div class="vis">Visibility - 1200m</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
